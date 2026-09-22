@@ -1,0 +1,97 @@
+/* Shared stylesheet - keeps navigation, banner, and layout consistent across every page */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+}
+
+/* Global layout table must NOT show borders */
+table.page {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+table.page td, table.page th {
+  border: none;
+}
+
+/* Banner - identical on every page */
+.banner {
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 18px 20px;
+  text-align: center;
+}
+.banner h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.8em;
+}
+.banner p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #cfcfcf;
+}
+
+/* Navigation sidebar - identical on every page */
+.nav-cell {
+  width: 160px;
+  background-color: #222831;
+  vertical-align: top;
+  padding: 16px 10px;
+}
+.nav-cell nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-cell nav ul li {
+  margin-bottom: 8px;
+}
+.nav-cell nav ul li a {
+  display: block;
+  padding: 8px 10px;
+  background-color: #393e46;
+  color: #eeeeee;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+.nav-cell nav ul li a:hover {
+  background-color: #00adb5;
+}
+.nav-cell nav ul li a.current {
+  background-color: #d4f04a;
+  color: #222222;
+  font-weight: bold;
+}
+
+/* Content column */
+.content-cell {
+  vertical-align: top;
+  padding: 20px;
+}
+
+/* Inner data table (used on the School page) MUST show borders */
+table.schedule {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+table.schedule th, table.schedule td {
+  border: 1px solid #333333;
+  padding: 6px 10px;
+  text-align: left;
+}
+table.schedule th {
+  background-color: #d4f04a;
+}
+
+figure {
+  margin: 16px 0;
+}
+figcaption {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #555555;
+}
